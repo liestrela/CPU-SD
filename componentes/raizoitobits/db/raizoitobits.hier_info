@@ -1,0 +1,525 @@
+|raizoitobits
+Q0 <= inst60.DB_MAX_OUTPUT_PORT_TYPE
+X5 => celuladivisao:inst5.X
+X4 => celuladivisao:inst6.X
+X6 => celuladivisao:inst2.X
+X7 => celuladivisao:inst1.X
+X3 => celuladivisao:inst12.X
+X2 => celuladivisao:inst13.X
+X1 => celuladivisao:inst17.X
+X0 => celuladivisao:inst14.X
+Q1 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst61.DB_MAX_OUTPUT_PORT_TYPE
+R0 <= celuladivisao:inst14.D
+R1 <= celuladivisao:inst17.D
+R2 <= celuladivisao:inst16.D
+R3 <= celuladivisao:inst18.D
+R4 <= celuladivisao:inst19.D
+R5 <= celuladivisao:inst21.D
+
+
+|raizoitobits|celuladivisao:inst21
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst21|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst10
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst10|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst5
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst5|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst6
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst6|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst4
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst4|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst2
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst2|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst1
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst1|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst3
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst3|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst11
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst11|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst12
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst12|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst13
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst13|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst9
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst9|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst19
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst19|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst18
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst18|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst16
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst16|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst17
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst17|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst14
+B_out <= fullsubtractor:inst.B_out
+X => fullsubtractor:inst.A
+X => inst11.IN0
+Y_in => fullsubtractor:inst.B
+Y_in => Y_out.DATAIN
+B_in => fullsubtractor:inst.B_in
+D <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OS_in => inst13.IN0
+OS_in => inst11.IN1
+OS_in => OS_out.DATAIN
+OS_out <= OS_in.DB_MAX_OUTPUT_PORT_TYPE
+Y_out <= Y_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|raizoitobits|celuladivisao:inst14|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

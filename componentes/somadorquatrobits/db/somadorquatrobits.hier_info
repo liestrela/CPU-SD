@@ -1,0 +1,73 @@
+|somadorquatrobits
+S0 <= fulladder:inst.S
+A0 => fulladder:inst.A
+B0 => fulladder:inst.B
+C_in => fulladder:inst.C_in
+S1 <= fulladder:inst1.S
+A1 => fulladder:inst1.A
+B1 => fulladder:inst1.B
+S2 <= fulladder:inst3.S
+A2 => fulladder:inst3.A
+B2 => fulladder:inst3.B
+S3 <= fulladder:inst4.S
+A3 => fulladder:inst4.A
+B3 => fulladder:inst4.B
+C_out <= fulladder:inst4.C_out
+
+
+|somadorquatrobits|fulladder:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst4.IN1
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+C_in => inst1.IN1
+C_in => inst3.IN0
+C_in => inst2.IN0
+C_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorquatrobits|fulladder:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst4.IN1
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+C_in => inst1.IN1
+C_in => inst3.IN0
+C_in => inst2.IN0
+C_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorquatrobits|fulladder:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst4.IN1
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+C_in => inst1.IN1
+C_in => inst3.IN0
+C_in => inst2.IN0
+C_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somadorquatrobits|fulladder:inst4
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+A => inst4.IN1
+B => inst.IN1
+B => inst4.IN0
+B => inst2.IN1
+C_in => inst1.IN1
+C_in => inst3.IN0
+C_in => inst2.IN0
+C_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

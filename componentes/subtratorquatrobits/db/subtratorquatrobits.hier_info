@@ -1,0 +1,69 @@
+|subtratorquatrobits
+S2 <= fullsubtractor:inst2.D
+A2 => fullsubtractor:inst2.A
+B2 => fullsubtractor:inst2.B
+A1 => fullsubtractor:inst1.A
+B1 => fullsubtractor:inst1.B
+A0 => fullsubtractor:inst.A
+B0 => fullsubtractor:inst.B
+B_in => fullsubtractor:inst.B_in
+S3 <= fullsubtractor:inst3.D
+A3 => fullsubtractor:inst3.A
+B3 => fullsubtractor:inst3.B
+B_out <= fullsubtractor:inst3.B_out
+S0 <= fullsubtractor:inst.D
+S1 <= fullsubtractor:inst1.D
+
+
+|subtratorquatrobits|fullsubtractor:inst2
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtratorquatrobits|fullsubtractor:inst1
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtratorquatrobits|fullsubtractor:inst
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtratorquatrobits|fullsubtractor:inst3
+D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst6.IN0
+B => inst.IN1
+B => inst3.IN1
+B => inst4.IN0
+B_in => inst1.IN1
+B_in => inst4.IN1
+B_in => inst2.IN0
+B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

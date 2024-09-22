@@ -1,0 +1,74 @@
+|comparadorquatrobits
+B_gt_A <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A3 => comparadorcompleto:inst.A
+B3 => comparadorcompleto:inst.B
+A1 => comparadorcompleto:inst3.A
+B1 => comparadorcompleto:inst3.B
+A2 => comparadorcompleto:inst2.A
+B2 => comparadorcompleto:inst2.B
+A0 => comparadorcompleto:inst4.A
+B0 => comparadorcompleto:inst4.B
+A_gt_B <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A_eq_B <= comparadorcompleto:inst4.A_eq_B_out
+
+
+|comparadorquatrobits|comparadorcompleto:inst
+B_gt_A <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst4.IN1
+A => inst6.IN0
+B => inst3.IN1
+B => inst8.IN0
+B => inst6.IN1
+A_eq_B_in => inst3.IN2
+A_eq_B_in => inst4.IN2
+A_eq_B_in => inst.IN0
+A_gt_B <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A_eq_B_out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparadorquatrobits|comparadorcompleto:inst3
+B_gt_A <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst4.IN1
+A => inst6.IN0
+B => inst3.IN1
+B => inst8.IN0
+B => inst6.IN1
+A_eq_B_in => inst3.IN2
+A_eq_B_in => inst4.IN2
+A_eq_B_in => inst.IN0
+A_gt_B <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A_eq_B_out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparadorquatrobits|comparadorcompleto:inst2
+B_gt_A <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst4.IN1
+A => inst6.IN0
+B => inst3.IN1
+B => inst8.IN0
+B => inst6.IN1
+A_eq_B_in => inst3.IN2
+A_eq_B_in => inst4.IN2
+A_eq_B_in => inst.IN0
+A_gt_B <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A_eq_B_out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparadorquatrobits|comparadorcompleto:inst4
+B_gt_A <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst4.IN1
+A => inst6.IN0
+B => inst3.IN1
+B => inst8.IN0
+B => inst6.IN1
+A_eq_B_in => inst3.IN2
+A_eq_B_in => inst4.IN2
+A_eq_B_in => inst.IN0
+A_gt_B <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A_eq_B_out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
