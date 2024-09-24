@@ -9,111 +9,155 @@ z2
 cModel Technology
 Z0 dC:/Users/15554396/Desktop/CPU2/simulation/qsim
 vCONTADOR
-Z1 !s110 1726799735
+!s110 1727041597
 !i10b 1
-!s100 nQ82^VHLiBgeP9jb;Nn@S1
-Im`P_FfkZ^o>gS?Ah7DR642
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 d/home/li/Documents/bcc/2/praticasd/cpu-sd/CPU2/simulation/qsim
-Z4 w1726799734
-Z5 8CPU2.vo
-Z6 FCPU2.vo
-Z7 L0 32
-Z8 OV;L;10.5b;63
+!s100 gBUn]f:gLP9PzAV=cB`z^0
+Ibz3@V9c2lgl9_VOU_]B8f2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z2 w1727041595
+Z3 8CPU2.vo
+Z4 FCPU2.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1726799735.000000
-Z10 !s107 CPU2.vo|
-Z11 !s90 -work|work|CPU2.vo|
+Z7 !s108 1727041597.000000
+Z8 !s107 CPU2.vo|
+Z9 !s90 -work|work|CPU2.vo|
 !i113 1
-Z12 o-work work
-Z13 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 n@c@o@n@t@a@d@o@r
 vCONTADOR_vlg_vec_tst
-R1
+!s110 1727041598
 !i10b 1
 !s100 C^C`@Z>1N5[Z0:oM4Jdm`1
 I44DSgh`Jj@jchX^XJmYDZ1
+R1
+R0
 R2
-R3
-w1726799733
-8Waveform1.vwf.vt
-FWaveform1.vwf.vt
+Z12 8Waveform1.vwf.vt
+Z13 FWaveform1.vwf.vt
 Z14 L0 30
-R8
+R6
 r1
 !s85 0
 31
-R9
+R7
 !s107 Waveform1.vwf.vt|
-!s90 -work|work|Waveform1.vwf.vt|
+Z15 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1
-R12
-R13
+R10
+R11
 n@c@o@n@t@a@d@o@r_vlg_vec_tst
 vhard_block
-R1
+Z16 !s110 1727047551
 !i10b 1
-!s100 ?BhVRgLRgHJo>c2n4S4j62
-IBgSTT8jXWH5MIV1AN_V]g1
-R2
+!s100 kJo:CZ<_l6XSJ]61n53bg3
+IM:VX4fSUVP3@MQRzM8`0;0
+R1
+R0
+Z17 w1727047550
+R3
+R4
+L0 2238
+R6
+r1
+!s85 0
+31
+Z18 !s108 1727047550.000000
+R8
+R9
+!i113 1
+R10
+R11
+vREGISTRADOR
+Z19 !s110 1726779967
+!i10b 1
+!s100 zj8V??P_I8;;XhEG?<mf]0
+IUomm<Jo?GoZodn]HbM2F=1
+R1
+R0
+w1726779966
 R3
 R4
 R5
 R6
-L0 605
-R8
 r1
 !s85 0
 31
+Z20 !s108 1726779967.000000
+R8
 R9
+!i113 1
 R10
 R11
-!i113 1
-R12
-R13
-vREGISTRADOR
-Z15 !s110 1726779967
-!i10b 1
-!s100 zj8V??P_I8;;XhEG?<mf]0
-IUomm<Jo?GoZodn]HbM2F=1
-R2
-R0
-w1726779966
-R5
-R6
-R7
-R8
-r1
-!s85 0
-31
-Z16 !s108 1726779967.000000
-R10
-R11
-!i113 1
-R12
-R13
 n@r@e@g@i@s@t@r@a@d@o@r
 vREGISTRADOR_vlg_vec_tst
-R15
+R19
 !i10b 1
 !s100 <9QI=hFg1:1B1nL1ZR5<22
 I[Rb<O?2@e>SggBkoZ@64<3
-R2
+R1
 R0
 w1726779965
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 R14
-R8
+R6
 r1
 !s85 0
 31
-R16
+R20
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
+R10
+R11
+n@r@e@g@i@s@t@r@a@d@o@r_vlg_vec_tst
+vTESTE_CONTADOR
+R16
+!i10b 1
+!s100 84B`P:LbX1CWDB?IPDPdn3
+Ic;Q>bjZB5XoD^LLl>h4>F1
+R1
+R0
+R17
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+R18
+R8
+R9
+!i113 1
+R10
+R11
+n@t@e@s@t@e_@c@o@n@t@a@d@o@r
+vTESTE_CONTADOR_vlg_vec_tst
+R16
+!i10b 1
+!s100 RImGV2oTR4c47Ci:o3]PB2
+I[@idzOMW5RN10ShG1B`RO0
+R1
+R0
+w1727047549
 R12
 R13
-n@r@e@g@i@s@t@r@a@d@o@r_vlg_vec_tst
+R14
+R6
+r1
+!s85 0
+31
+!s108 1727047551.000000
+!s107 Waveform1.vwf.vt|
+R15
+!i113 1
+R10
+R11
+n@t@e@s@t@e_@c@o@n@t@a@d@o@r_vlg_vec_tst

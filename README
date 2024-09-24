@@ -1,3 +1,5 @@
 TODO:
 - adicionar load de endereço no contador;
-- testar nas fpgas com o debouncer;
+- consertar o problema com a latência no contador-ROM;
+- criar a ULA
+- criar a UC

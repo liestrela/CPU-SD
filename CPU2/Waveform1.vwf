@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -69,7 +71,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 64000.0;
+	DATA_DURATION = 16000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 1000.0;
@@ -201,7 +203,7 @@ TRANSITION_LIST("CLEAR")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 64000.0;
+		LEVEL 0 FOR 16000.0;
 	}
 }
 
@@ -212,7 +214,7 @@ TRANSITION_LIST("CLOCK")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 64;
+			REPEAT = 16;
 			LEVEL 0 FOR 500.0;
 			LEVEL 1 FOR 500.0;
 		}
@@ -224,7 +226,7 @@ TRANSITION_LIST("ENABLE")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 64000.0;
+		LEVEL 1 FOR 16000.0;
 	}
 }
 
@@ -234,7 +236,7 @@ TRANSITION_LIST("OUT[7]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
@@ -244,7 +246,7 @@ TRANSITION_LIST("OUT[6]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
@@ -254,7 +256,7 @@ TRANSITION_LIST("OUT[5]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
@@ -264,7 +266,7 @@ TRANSITION_LIST("OUT[4]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
@@ -274,7 +276,7 @@ TRANSITION_LIST("OUT[3]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
@@ -284,7 +286,7 @@ TRANSITION_LIST("OUT[2]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
@@ -294,7 +296,7 @@ TRANSITION_LIST("OUT[1]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
@@ -304,7 +306,7 @@ TRANSITION_LIST("OUT[0]")
 	{
 		REPEAT = 1;
 		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 63001.0;
+		LEVEL 0 FOR 15001.0;
 	}
 }
 
