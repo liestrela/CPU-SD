@@ -1,5 +1,3 @@
 TODO:
-- adicionar load de endereço no contador;
-- consertar o problema com a latência no contador-ROM;
-- criar a ULA
-- criar a UC
+- testar load de endereço no contador;
+- testar a UC;

@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/15554396/Desktop/CPU-20241003T194446Z-001/CPU/simulation/qsim
+vDEMUX12_4
+Z1 !s110 1727987985
+!i10b 1
+!s100 0@oPiQjmS5@iJdW=HhOVU2
+IfX2D@fS=DJIKLg2mkIG3:0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727987984
+Z3 8CPU.vo
+Z4 FCPU.vo
+Z5 L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1727987985.000000
+Z8 !s107 CPU.vo|
+Z9 !s90 -work|work|CPU.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@d@e@m@u@x12_4
+vDEMUX12_4_vlg_vec_tst
+R1
+!i10b 1
+!s100 4L17]NP6QNlXmEVkQ80MJ3
+IhBBL>7K?0B[0lMmKa6TAD0
+R2
+R0
+w1727987983
+Z12 8Waveform1.vwf.vt
+Z13 FWaveform1.vwf.vt
+Z14 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+Z15 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+n@d@e@m@u@x12_4_vlg_vec_tst
+vTESTE_ROM
+Z16 !s110 1727988830
+!i10b 1
+!s100 6B=NY;=Ueb=76VHVaEoJi0
+I9Cf:i>DdYKFhzn7T37d3Y1
+R2
+R0
+w1727988829
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z17 !s108 1727988830.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@t@e@s@t@e_@r@o@m
+vTESTE_ROM_vlg_vec_tst
+R16
+!i10b 1
+!s100 7[Y:30Dm=O7S93mT5D2IG0
+I=G9B17W95^JNVhH5N]JDi0
+R2
+R0
+w1727988828
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R17
+!s107 Waveform1.vwf.vt|
+R15
+!i113 1
+R10
+R11
+n@t@e@s@t@e_@r@o@m_vlg_vec_tst
+vULA
+Z18 !s110 1727985253
+!i10b 1
+!s100 5hh@=JSJAOOO>O6UZ94jU1
+Ih;n:5c:><hJGOG4eM[z7I3
+R2
+R0
+w1727985252
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z19 !s108 1727985253.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@u@l@a
+vULA_vlg_vec_tst
+R18
+!i10b 1
+!s100 3`A?]nZRWli;9EW<RLRe40
+IJKz6ARf62[zzCDU8F`ZWT2
+R2
+R0
+w1727985251
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R19
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@u@l@a_vlg_vec_tst
