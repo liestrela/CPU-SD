@@ -1,3 +1,4 @@
 TODO:
-- testar load de endereço no contador;
-- testar a UC;
+- limpar o display do contador no master reset;
+- testar cada componente no modelsim e exportar as saídas para mostrar pro prof.;
+- apresentar o projeto;

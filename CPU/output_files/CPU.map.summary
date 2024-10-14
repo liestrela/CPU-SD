@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Oct  3 18:51:22 2024
+Analysis & Synthesis Status : Successful - Sun Oct 13 23:24:32 2024
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : CPU
-Top-level Entity Name : CONTADOR
+Top-level Entity Name : PRINCIPAL2
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 8
-Total pins : 20
+Total registers : 76
+Total pins : 59
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 4,096
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

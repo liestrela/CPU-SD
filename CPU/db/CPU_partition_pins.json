@@ -4,83 +4,239 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "OUT[7]",
+					"name" : "ULA_WARN",
 					"strict" : false
 				},
 				{
-					"name" : "OUT[6]",
+					"name" : "CNT_D[7]",
 					"strict" : false
 				},
 				{
-					"name" : "OUT[5]",
+					"name" : "CNT_D[6]",
 					"strict" : false
 				},
 				{
-					"name" : "OUT[4]",
+					"name" : "CNT_D[5]",
 					"strict" : false
 				},
 				{
-					"name" : "OUT[3]",
+					"name" : "CNT_D[4]",
 					"strict" : false
 				},
 				{
-					"name" : "OUT[2]",
+					"name" : "CNT_D[3]",
 					"strict" : false
 				},
 				{
-					"name" : "OUT[1]",
+					"name" : "CNT_D[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OUT[0]",
+					"name" : "CNT_D[1]",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK",
+					"name" : "CNT_D[0]",
 					"strict" : false
 				},
 				{
-					"name" : "JUMP",
+					"name" : "mem_d0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[7]",
+					"name" : "mem_d0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[6]",
+					"name" : "mem_d0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "CLEAR",
+					"name" : "mem_d0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[5]",
+					"name" : "mem_d0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[4]",
+					"name" : "mem_d0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[3]",
+					"name" : "mem_d0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[2]",
+					"name" : "mem_d1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[1]",
+					"name" : "mem_d1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ENABLE",
+					"name" : "mem_d1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "OP[0]",
+					"name" : "mem_d1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mem_d3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "r1_d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r1_d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "r1_d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "r1_d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "r1_d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "r1_d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "r1_d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "r2_d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r2_d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "r2_d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "r2_d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "r2_d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "r2_d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "r2_d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RST_DEB",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "MASTER_CLR",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_FPGA",
 					"strict" : false
 				}
 			]
