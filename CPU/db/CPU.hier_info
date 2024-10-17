@@ -1,4 +1,4 @@
-|PRINCIPAL2
+|PRINCIPAL
 ULA_WARN <= ULA:ula.WARNING
 CLK_FPGA => debouncer:inst81.clk_fpga
 CLK_FPGA => debouncer:inst82.clk_fpga
@@ -62,7 +62,7 @@ ULA_OUT[2] <= ULA:ula.RES[2]
 ULA_OUT[3] <= ULA:ula.RES[3]
 
 
-|PRINCIPAL2|ULA:ula
+|PRINCIPAL|ULA:ula
 WARNING <= mux42:inst9.result
 A[0] => SUBTRATOR4:inst11.A[0]
 A[0] => SOMADOR4:inst13.A[0]
@@ -98,7 +98,7 @@ RES[2] <= mux42_4:inst.result[2]
 RES[3] <= mux42_4:inst.result[3]
 
 
-|PRINCIPAL2|ULA:ula|mux42:inst9
+|PRINCIPAL|ULA:ula|mux42:inst9
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 data2 => sub_wire1[2].IN1
@@ -108,7 +108,7 @@ sel[1] => sel[1].IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|ULA:ula|mux42:inst9|lpm_mux:LPM_MUX_component
+|PRINCIPAL|ULA:ula|mux42:inst9|lpm_mux:LPM_MUX_component
 data[0][0] => mux_sjc:auto_generated.data[0]
 data[1][0] => mux_sjc:auto_generated.data[1]
 data[2][0] => mux_sjc:auto_generated.data[2]
@@ -121,7 +121,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_sjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|ULA:ula|mux42:inst9|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated
+|PRINCIPAL|ULA:ula|mux42:inst9|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 data[2] => l1_w0_n1_mux_dataout.IN1
@@ -135,7 +135,7 @@ sel[1] => l2_w0_n0_mux_dataout.IN0
 sel[1] => _.IN0
 
 
-|PRINCIPAL2|ULA:ula|SUBTRATOR4:inst11
+|PRINCIPAL|ULA:ula|SUBTRATOR4:inst11
 B_out <= SUBTRATOR:inst3.B_out
 A[0] => SUBTRATOR:inst.A
 A[1] => SUBTRATOR:inst1.A
@@ -151,7 +151,7 @@ S[2] <= SUBTRATOR:inst2.D
 S[3] <= SUBTRATOR:inst3.D
 
 
-|PRINCIPAL2|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst3
+|PRINCIPAL|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst3
 D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst6.IN0
@@ -164,7 +164,7 @@ B_in => inst2.IN0
 B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst2
+|PRINCIPAL|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst2
 D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst6.IN0
@@ -177,7 +177,7 @@ B_in => inst2.IN0
 B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst1
+|PRINCIPAL|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst1
 D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst6.IN0
@@ -190,7 +190,7 @@ B_in => inst2.IN0
 B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst
+|PRINCIPAL|ULA:ula|SUBTRATOR4:inst11|SUBTRATOR:inst
 D <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst6.IN0
@@ -203,7 +203,7 @@ B_in => inst2.IN0
 B_out <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|SOMADOR4:inst13
+|PRINCIPAL|ULA:ula|SOMADOR4:inst13
 C_OUT <= SOMADOR:inst4.c_out
 A[0] => SOMADOR:inst.a
 A[1] => SOMADOR:inst2.a
@@ -219,7 +219,7 @@ RES[2] <= SOMADOR:inst3.s
 RES[3] <= SOMADOR:inst4.s
 
 
-|PRINCIPAL2|ULA:ula|SOMADOR4:inst13|SOMADOR:inst4
+|PRINCIPAL|ULA:ula|SOMADOR4:inst13|SOMADOR:inst4
 s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 a => inst.IN0
 a => inst4.IN0
@@ -233,7 +233,7 @@ c_in => inst5.IN1
 c_out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|SOMADOR4:inst13|SOMADOR:inst3
+|PRINCIPAL|ULA:ula|SOMADOR4:inst13|SOMADOR:inst3
 s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 a => inst.IN0
 a => inst4.IN0
@@ -247,7 +247,7 @@ c_in => inst5.IN1
 c_out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|SOMADOR4:inst13|SOMADOR:inst2
+|PRINCIPAL|ULA:ula|SOMADOR4:inst13|SOMADOR:inst2
 s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 a => inst.IN0
 a => inst4.IN0
@@ -261,7 +261,7 @@ c_in => inst5.IN1
 c_out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|SOMADOR4:inst13|SOMADOR:inst
+|PRINCIPAL|ULA:ula|SOMADOR4:inst13|SOMADOR:inst
 s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 a => inst.IN0
 a => inst4.IN0
@@ -275,7 +275,7 @@ c_in => inst5.IN1
 c_out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ULA:ula|mux42_4:inst
+|PRINCIPAL|ULA:ula|mux42_4:inst
 data0x[0] => sub_wire1[0].IN1
 data0x[1] => sub_wire1[1].IN1
 data0x[2] => sub_wire1[2].IN1
@@ -300,7 +300,7 @@ result[2] <= lpm_mux:LPM_MUX_component.result
 result[3] <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|ULA:ula|mux42_4:inst|lpm_mux:LPM_MUX_component
+|PRINCIPAL|ULA:ula|mux42_4:inst|lpm_mux:LPM_MUX_component
 data[0][0] => mux_vjc:auto_generated.data[0]
 data[0][1] => mux_vjc:auto_generated.data[1]
 data[0][2] => mux_vjc:auto_generated.data[2]
@@ -328,7 +328,7 @@ result[2] <= mux_vjc:auto_generated.result[2]
 result[3] <= mux_vjc:auto_generated.result[3]
 
 
-|PRINCIPAL2|ULA:ula|mux42_4:inst|lpm_mux:LPM_MUX_component|mux_vjc:auto_generated
+|PRINCIPAL|ULA:ula|mux42_4:inst|lpm_mux:LPM_MUX_component|mux_vjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -375,7 +375,7 @@ sel[1] => l2_w3_n0_mux_dataout.IN0
 sel[1] => _.IN0
 
 
-|PRINCIPAL2|ULA:ula|MULTIPLICADOR4:inst12
+|PRINCIPAL|ULA:ula|MULTIPLICADOR4:inst12
 S[0] <= <GND>
 S[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
@@ -386,7 +386,7 @@ A[2] => inst6.IN0
 A[3] => ~NO_FANOUT~
 
 
-|PRINCIPAL2|ULA:ula|DIVISOR4:inst10
+|PRINCIPAL|ULA:ula|DIVISOR4:inst10
 S[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 S[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S[2] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
@@ -397,7 +397,7 @@ A[2] => inst2.IN0
 A[3] => inst4.IN0
 
 
-|PRINCIPAL2|mux21_4:inst11
+|PRINCIPAL|mux21_4:inst11
 data0x[0] => sub_wire1[0].IN1
 data0x[1] => sub_wire1[1].IN1
 data0x[2] => sub_wire1[2].IN1
@@ -413,7 +413,7 @@ result[2] <= lpm_mux:LPM_MUX_component.result
 result[3] <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|mux21_4:inst11|lpm_mux:LPM_MUX_component
+|PRINCIPAL|mux21_4:inst11|lpm_mux:LPM_MUX_component
 data[0][0] => mux_tjc:auto_generated.data[0]
 data[0][1] => mux_tjc:auto_generated.data[1]
 data[0][2] => mux_tjc:auto_generated.data[2]
@@ -432,7 +432,7 @@ result[2] <= mux_tjc:auto_generated.result[2]
 result[3] <= mux_tjc:auto_generated.result[3]
 
 
-|PRINCIPAL2|mux21_4:inst11|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated
+|PRINCIPAL|mux21_4:inst11|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w1_n0_mux_dataout.IN1
 data[2] => l1_w2_n0_mux_dataout.IN1
@@ -455,7 +455,7 @@ sel[0] => l1_w3_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|UC:inst1
+|PRINCIPAL|UC:inst1
 JUMP <= inst.DB_MAX_OUTPUT_PORT_TYPE
 INS[0] => ENDERECO[0].DATAIN
 INS[0] => OPERANDO[0].DATAIN
@@ -504,7 +504,7 @@ OPERANDO[2] <= INS[2].DB_MAX_OUTPUT_PORT_TYPE
 OPERANDO[3] <= INS[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|ROM2:inst2
+|PRINCIPAL|ROM1:inst2
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -532,7 +532,7 @@ q[14] <= altsyncram:altsyncram_component.q_a[14]
 q[15] <= altsyncram:altsyncram_component.q_a[15]
 
 
-|PRINCIPAL2|ROM2:inst2|altsyncram:altsyncram_component
+|PRINCIPAL|ROM1:inst2|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -554,18 +554,18 @@ data_a[13] => ~NO_FANOUT~
 data_a[14] => ~NO_FANOUT~
 data_a[15] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_8u14:auto_generated.address_a[0]
-address_a[1] => altsyncram_8u14:auto_generated.address_a[1]
-address_a[2] => altsyncram_8u14:auto_generated.address_a[2]
-address_a[3] => altsyncram_8u14:auto_generated.address_a[3]
-address_a[4] => altsyncram_8u14:auto_generated.address_a[4]
-address_a[5] => altsyncram_8u14:auto_generated.address_a[5]
-address_a[6] => altsyncram_8u14:auto_generated.address_a[6]
-address_a[7] => altsyncram_8u14:auto_generated.address_a[7]
+address_a[0] => altsyncram_i224:auto_generated.address_a[0]
+address_a[1] => altsyncram_i224:auto_generated.address_a[1]
+address_a[2] => altsyncram_i224:auto_generated.address_a[2]
+address_a[3] => altsyncram_i224:auto_generated.address_a[3]
+address_a[4] => altsyncram_i224:auto_generated.address_a[4]
+address_a[5] => altsyncram_i224:auto_generated.address_a[5]
+address_a[6] => altsyncram_i224:auto_generated.address_a[6]
+address_a[7] => altsyncram_i224:auto_generated.address_a[7]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_8u14:auto_generated.clock0
+clock0 => altsyncram_i224:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -575,29 +575,29 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_8u14:auto_generated.q_a[0]
-q_a[1] <= altsyncram_8u14:auto_generated.q_a[1]
-q_a[2] <= altsyncram_8u14:auto_generated.q_a[2]
-q_a[3] <= altsyncram_8u14:auto_generated.q_a[3]
-q_a[4] <= altsyncram_8u14:auto_generated.q_a[4]
-q_a[5] <= altsyncram_8u14:auto_generated.q_a[5]
-q_a[6] <= altsyncram_8u14:auto_generated.q_a[6]
-q_a[7] <= altsyncram_8u14:auto_generated.q_a[7]
-q_a[8] <= altsyncram_8u14:auto_generated.q_a[8]
-q_a[9] <= altsyncram_8u14:auto_generated.q_a[9]
-q_a[10] <= altsyncram_8u14:auto_generated.q_a[10]
-q_a[11] <= altsyncram_8u14:auto_generated.q_a[11]
-q_a[12] <= altsyncram_8u14:auto_generated.q_a[12]
-q_a[13] <= altsyncram_8u14:auto_generated.q_a[13]
-q_a[14] <= altsyncram_8u14:auto_generated.q_a[14]
-q_a[15] <= altsyncram_8u14:auto_generated.q_a[15]
+q_a[0] <= altsyncram_i224:auto_generated.q_a[0]
+q_a[1] <= altsyncram_i224:auto_generated.q_a[1]
+q_a[2] <= altsyncram_i224:auto_generated.q_a[2]
+q_a[3] <= altsyncram_i224:auto_generated.q_a[3]
+q_a[4] <= altsyncram_i224:auto_generated.q_a[4]
+q_a[5] <= altsyncram_i224:auto_generated.q_a[5]
+q_a[6] <= altsyncram_i224:auto_generated.q_a[6]
+q_a[7] <= altsyncram_i224:auto_generated.q_a[7]
+q_a[8] <= altsyncram_i224:auto_generated.q_a[8]
+q_a[9] <= altsyncram_i224:auto_generated.q_a[9]
+q_a[10] <= altsyncram_i224:auto_generated.q_a[10]
+q_a[11] <= altsyncram_i224:auto_generated.q_a[11]
+q_a[12] <= altsyncram_i224:auto_generated.q_a[12]
+q_a[13] <= altsyncram_i224:auto_generated.q_a[13]
+q_a[14] <= altsyncram_i224:auto_generated.q_a[14]
+q_a[15] <= altsyncram_i224:auto_generated.q_a[15]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|PRINCIPAL2|ROM2:inst2|altsyncram:altsyncram_component|altsyncram_8u14:auto_generated
+|PRINCIPAL|ROM1:inst2|altsyncram:altsyncram_component|altsyncram_i224:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -760,7 +760,7 @@ q_a[14] <= ram_block1a14.PORTADATAOUT
 q_a[15] <= ram_block1a15.PORTADATAOUT
 
 
-|PRINCIPAL2|debouncer:inst81
+|PRINCIPAL|debouncer:inst81
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -820,7 +820,7 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|CONTADOR:inst5
+|PRINCIPAL|CONTADOR:inst5
 OUT[0] <= inst99.DB_MAX_OUTPUT_PORT_TYPE
 OUT[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 OUT[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
@@ -873,7 +873,7 @@ CLOCK => inst219.CLK
 CLOCK => inst229.CLK
 
 
-|PRINCIPAL2|debouncer:inst82
+|PRINCIPAL|debouncer:inst82
 clk_fpga => counter[0].CLK
 clk_fpga => counter[1].CLK
 clk_fpga => counter[2].CLK
@@ -933,7 +933,7 @@ input_key => intermediate.DATAIN
 out_key <= out_key~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1
+|PRINCIPAL|REGISTRADOR:registrador_1
 OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -953,14 +953,14 @@ LOAD => mux21:inst6.sel
 LOAD => mux21:inst7.sel
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst4
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst4
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst4|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst4|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -970,7 +970,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -978,14 +978,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst5
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst5
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst5|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst5|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -995,7 +995,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1003,14 +1003,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst6
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst6
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst6|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst6|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1020,7 +1020,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1028,14 +1028,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst7
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst7
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst7|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst7|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1045,7 +1045,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_1|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_1|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1053,7 +1053,7 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|DEMUX12:inst10
+|PRINCIPAL|DEMUX12:inst10
 Y[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Y[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst.IN0
@@ -1062,7 +1062,7 @@ D => inst2.IN1
 D => inst3.IN0
 
 
-|PRINCIPAL2|DEMUX12_4:inst
+|PRINCIPAL|DEMUX12_4:inst
 Y0[0] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
 Y0[1] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
 Y0[2] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
@@ -1081,7 +1081,7 @@ Y1[2] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
 Y1[3] <= inst32.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|PRINCIPAL2|DEMUX12_4:inst|DEMUX12:inst
+|PRINCIPAL|DEMUX12_4:inst|DEMUX12:inst
 Y[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Y[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst.IN0
@@ -1090,7 +1090,7 @@ D => inst2.IN1
 D => inst3.IN0
 
 
-|PRINCIPAL2|DEMUX12_4:inst|DEMUX12:inst3
+|PRINCIPAL|DEMUX12_4:inst|DEMUX12:inst3
 Y[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Y[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst.IN0
@@ -1099,7 +1099,7 @@ D => inst2.IN1
 D => inst3.IN0
 
 
-|PRINCIPAL2|DEMUX12_4:inst|DEMUX12:inst4
+|PRINCIPAL|DEMUX12_4:inst|DEMUX12:inst4
 Y[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Y[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst.IN0
@@ -1108,7 +1108,7 @@ D => inst2.IN1
 D => inst3.IN0
 
 
-|PRINCIPAL2|DEMUX12_4:inst|DEMUX12:inst5
+|PRINCIPAL|DEMUX12_4:inst|DEMUX12:inst5
 Y[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 Y[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 S => inst.IN0
@@ -1117,7 +1117,7 @@ D => inst2.IN1
 D => inst3.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2
+|PRINCIPAL|REGISTRADOR:registrador_2
 OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -1137,14 +1137,14 @@ LOAD => mux21:inst6.sel
 LOAD => mux21:inst7.sel
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst4
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst4
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst4|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst4|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1154,7 +1154,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1162,14 +1162,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst5
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst5
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst5|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst5|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1179,7 +1179,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1187,14 +1187,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst6
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst6
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst6|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst6|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1204,7 +1204,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1212,14 +1212,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst7
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst7
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst7|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst7|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1229,7 +1229,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:registrador_2|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:registrador_2|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1237,7 +1237,7 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657
+|PRINCIPAL|REGISTRADOR:inst65657
 OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -1257,14 +1257,14 @@ LOAD => mux21:inst6.sel
 LOAD => mux21:inst7.sel
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst4
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst4
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst4|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst4|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1274,7 +1274,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1282,14 +1282,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst5
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst5
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst5|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst5|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1299,7 +1299,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1307,14 +1307,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst6
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst6
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst6|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst6|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1324,7 +1324,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1332,14 +1332,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst7
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst7
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst7|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst7|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1349,7 +1349,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65657|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65657|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1357,7 +1357,7 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656
+|PRINCIPAL|REGISTRADOR:inst65656
 OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
@@ -1377,14 +1377,14 @@ LOAD => mux21:inst6.sel
 LOAD => mux21:inst7.sel
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst4
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst4
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst4|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst4|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1394,7 +1394,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst4|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1402,14 +1402,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst5
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst5
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst5|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst5|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1419,7 +1419,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst5|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1427,14 +1427,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst6
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst6
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst6|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst6|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1444,7 +1444,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst6|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1452,14 +1452,14 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst7
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst7
 data0 => sub_wire1[0].IN1
 data1 => sub_wire1[1].IN1
 sel => sub_wire4.IN1
 result <= lpm_mux:LPM_MUX_component.result
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst7|lpm_mux:LPM_MUX_component
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst7|lpm_mux:LPM_MUX_component
 data[0][0] => mux_pjc:auto_generated.data[0]
 data[1][0] => mux_pjc:auto_generated.data[1]
 sel[0] => mux_pjc:auto_generated.sel[0]
@@ -1469,7 +1469,7 @@ clken => ~NO_FANOUT~
 result[0] <= mux_pjc:auto_generated.result[0]
 
 
-|PRINCIPAL2|REGISTRADOR:inst65656|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
+|PRINCIPAL|REGISTRADOR:inst65656|mux21:inst7|lpm_mux:LPM_MUX_component|mux_pjc:auto_generated
 data[0] => l1_w0_n0_mux_dataout.IN1
 data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
@@ -1477,7 +1477,7 @@ sel[0] => l1_w0_n0_mux_dataout.IN0
 sel[0] => _.IN0
 
 
-|PRINCIPAL2|DISPLAY:memdisp0
+|PRINCIPAL|DISPLAY:memdisp0
 O[0] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
@@ -1566,7 +1566,7 @@ A[3] => inst74.IN1
 A[3] => inst79.IN0
 
 
-|PRINCIPAL2|DISPLAY:memdisp1
+|PRINCIPAL|DISPLAY:memdisp1
 O[0] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
@@ -1655,7 +1655,7 @@ A[3] => inst74.IN1
 A[3] => inst79.IN0
 
 
-|PRINCIPAL2|DISPLAY:memdisp2
+|PRINCIPAL|DISPLAY:memdisp2
 O[0] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
@@ -1744,7 +1744,7 @@ A[3] => inst74.IN1
 A[3] => inst79.IN0
 
 
-|PRINCIPAL2|DISPLAY:memdisp3
+|PRINCIPAL|DISPLAY:memdisp3
 O[0] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
@@ -1833,7 +1833,7 @@ A[3] => inst74.IN1
 A[3] => inst79.IN0
 
 
-|PRINCIPAL2|DISPLAY:inst35
+|PRINCIPAL|DISPLAY:inst35
 O[0] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
@@ -1922,7 +1922,7 @@ A[3] => inst74.IN1
 A[3] => inst79.IN0
 
 
-|PRINCIPAL2|DISPLAY:inst34
+|PRINCIPAL|DISPLAY:inst34
 O[0] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= inst17.DB_MAX_OUTPUT_PORT_TYPE

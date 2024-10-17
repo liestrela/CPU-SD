@@ -7,7 +7,7 @@ Note: if both Questa Intel FPGA Edition and ModelSim executables are available, 
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source="C:/Users/15554396/Desktop/CPU-SD-main/CPU/Waveform6.vwf" --testbench_file="C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/Waveform6.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source="C:/Users/15554396/Desktop/CPU-SD-main/CPU/Waveform9.vwf" --testbench_file="C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/Waveform9.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,12 +26,17 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Oct 13 22:50:35 2024
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/15554396/Desktop/CPU-SD-main/CPU/Waveform6.vwf --testbench_file=C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/Waveform6.vwf.vt
+    Info: Processing started: Wed Oct 16 22:53:16 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/15554396/Desktop/CPU-SD-main/CPU/Waveform9.vwf --testbench_file=C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/Waveform9.vwf.vt
 Info (119006): Selected device 5CEBA4F23C7 for design "CPU"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-REG_2[3]" in vector source file when writing test bench files
+ (201000): Generated Verilog Test Bench File C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/Waveform9.vwf.vt for simulation
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4715 megabytes
+    Info: Processing ended: Wed Oct 16 22:53:17 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
@@ -58,14 +63,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Oct 13 22:50:36 2024
+    Info: Processing started: Wed Oct 16 22:53:17 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/ CPU -c CPU
 Info (119006): Selected device 5CEBA4F23C7 for design "CPU"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file CPU.vo in folder "C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4721 megabytes
-    Info: Processing ended: Sun Oct 13 22:50:37 2024
+    Info: Peak virtual memory: 4718 megabytes
+    Info: Processing ended: Wed Oct 16 22:53:18 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -93,119 +98,62 @@ Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 22:50:37 on Oct 13,2024
+# Start time: 22:53:19 on Oct 16,2024
 # vlog -work work CPU.vo 
 
-# -- Compiling module PRINCIPAL
+# -- Compiling module TESTE_UC
 
 # 
 
 # Top level modules:
-# 	PRINCIPAL
+# 	TESTE_UC
 
-# End time: 22:50:37 on Oct 13,2024, Elapsed time: 0:00:00
+# End time: 22:53:19 on Oct 16,2024, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-# Start time: 22:50:38 on Oct 13,2024
-# vlog -work work Waveform6.vwf.vt 
+# Start time: 22:53:19 on Oct 16,2024
+# vlog -work work Waveform9.vwf.vt 
 
-# -- Compiling module PRINCIPAL_vlg_vec_tst
+# -- Compiling module TESTE_UC_vlg_vec_tst
 
 # 
 
 # Top level modules:
-# 	PRINCIPAL_vlg_vec_tst
+# 	TESTE_UC_vlg_vec_tst
 
-# End time: 22:50:38 on Oct 13,2024, Elapsed time: 0:00:00
+# End time: 22:53:19 on Oct 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.PRINCIPAL_vlg_vec_tst 
-# Start time: 22:50:38 on Oct 13,2024
-# Loading work.PRINCIPAL_vlg_vec_tst
-# Loading work.PRINCIPAL
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.TESTE_UC_vlg_vec_tst 
+# Start time: 22:53:19 on Oct 16,2024
+# Loading work.TESTE_UC_vlg_vec_tst
+# Loading work.TESTE_UC
 # Loading cyclonev_ver.cyclonev_io_obuf
 # Loading cyclonev_ver.cyclonev_io_ibuf
 # Loading cyclonev_ver.cyclonev_lcell_comb
-# Loading altera_ver.dffeas
-# Loading cyclonev_ver.cyclonev_ram_block
-# Loading sv_std.std
-# Loading altera_lnsim_ver.generic_m10k
-# Loading altera_lnsim_ver.altera_lnsim_functions
-# Loading altera_lnsim_ver.common_28nm_ram_block
-# Loading altera_lnsim_ver.common_28nm_ram_register
-# Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
-# Loading altera_ver.PRIM_GDFF_LOW
 
 # after#25
 
-# ** Note: $finish    : Waveform6.vwf.vt(67)
-#    Time: 16 us  Iteration: 0  Instance: /PRINCIPAL_vlg_vec_tst
+# ** Note: $finish    : Waveform9.vwf.vt(61)
+#    Time: 1 us  Iteration: 0  Instance: /TESTE_UC_vlg_vec_tst
 
-# End time: 22:50:38 on Oct 13,2024, Elapsed time: 0:00:00
+# End time: 22:53:19 on Oct 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/15554396/Desktop/CPU-SD-main/CPU/Waveform6.vwf...
+Reading C:/Users/15554396/Desktop/CPU-SD-main/CPU/Waveform9.vwf...
 
 Reading C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/CPU.msim.vcd...
 
 Processing channel transitions... 
 
-Warning: REG_1[3] - signal not found in VCD.
-
-Warning: REG_1[2] - signal not found in VCD.
-
-Warning: REG_1[1] - signal not found in VCD.
-
-Warning: REG_1[0] - signal not found in VCD.
-
-Warning: REG_2[3] - signal not found in VCD.
-
-Warning: REG_2[2] - signal not found in VCD.
-
-Warning: REG_2[1] - signal not found in VCD.
-
-Warning: REG_2[0] - signal not found in VCD.
-
-Warning: MEM[15] - signal not found in VCD.
-
-Warning: MEM[14] - signal not found in VCD.
-
-Warning: MEM[13] - signal not found in VCD.
-
-Warning: MEM[12] - signal not found in VCD.
-
-Warning: MEM[11] - signal not found in VCD.
-
-Warning: MEM[10] - signal not found in VCD.
-
-Warning: MEM[9] - signal not found in VCD.
-
-Warning: MEM[8] - signal not found in VCD.
-
-Warning: MEM[7] - signal not found in VCD.
-
-Warning: MEM[6] - signal not found in VCD.
-
-Warning: MEM[5] - signal not found in VCD.
-
-Warning: MEM[4] - signal not found in VCD.
-
-Warning: MEM[3] - signal not found in VCD.
-
-Warning: MEM[2] - signal not found in VCD.
-
-Warning: MEM[1] - signal not found in VCD.
-
-Warning: MEM[0] - signal not found in VCD.
-
-Writing the resulting VWF to C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/CPU_20241013225038.sim.vwf
+Writing the resulting VWF to C:/Users/15554396/Desktop/CPU-SD-main/CPU/simulation/qsim/CPU_20241016225319.sim.vwf
 
 Finished VCD to VWF conversion.
 

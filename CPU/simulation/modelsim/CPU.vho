@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition"
 
--- DATE "10/13/2024 23:25:13"
+-- DATE "10/16/2024 23:26:53"
 
 -- 
 -- Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -36,7 +36,7 @@ USE ALTERA_LNSIM.ALTERA_LNSIM_COMPONENTS.ALL;
 USE CYCLONEV.CYCLONEV_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	PRINCIPAL2 IS
+ENTITY 	PRINCIPAL IS
     PORT (
 	ULA_WARN : OUT std_logic;
 	CLK_FPGA : IN std_logic;
@@ -52,7 +52,7 @@ ENTITY 	PRINCIPAL2 IS
 	r2_d : OUT std_logic_vector(6 DOWNTO 0);
 	ULA_OUT : OUT std_logic_vector(3 DOWNTO 0)
 	);
-END PRINCIPAL2;
+END PRINCIPAL;
 
 -- Design Ports Information
 -- ULA_WARN	=>  Location: PIN_L1,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -116,7 +116,7 @@ END PRINCIPAL2;
 -- CLK_FPGA	=>  Location: PIN_M9,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
-ARCHITECTURE structure OF PRINCIPAL2 IS
+ARCHITECTURE structure OF PRINCIPAL IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -407,29 +407,15 @@ SIGNAL \inst34|inst9~0_combout\ : std_logic;
 SIGNAL \inst2|altsyncram_component|auto_generated|q_a\ : std_logic_vector(15 DOWNTO 0);
 SIGNAL \inst81|counter\ : std_logic_vector(23 DOWNTO 0);
 SIGNAL \inst82|counter\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst82|ALT_INV_counter\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst81|ALT_INV_counter\ : std_logic_vector(23 DOWNTO 0);
-SIGNAL \inst2|altsyncram_component|auto_generated|ALT_INV_q_a\ : std_logic_vector(15 DOWNTO 0);
-SIGNAL \memdisp0|ALT_INV_inst21~0_combout\ : std_logic;
-SIGNAL \memdisp0|ALT_INV_inst24~0_combout\ : std_logic;
-SIGNAL \memdisp0|ALT_INV_inst49~0_combout\ : std_logic;
-SIGNAL \memdisp0|ALT_INV_inst50~0_combout\ : std_logic;
-SIGNAL \memdisp0|ALT_INV_inst60~0_combout\ : std_logic;
-SIGNAL \memdisp0|ALT_INV_inst78~0_combout\ : std_logic;
-SIGNAL \ula|inst11|inst2|ALT_INV_inst5~0_combout\ : std_logic;
-SIGNAL \ula|inst13|inst3|ALT_INV_inst6~0_combout\ : std_logic;
-SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w0_n0_mux_dataout~0_combout\ : std_logic;
-SIGNAL \registrador_1|ALT_INV_inst~q\ : std_logic;
-SIGNAL \registrador_2|ALT_INV_inst~q\ : std_logic;
-SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w1_n0_mux_dataout~0_combout\ : std_logic;
-SIGNAL \registrador_1|ALT_INV_inst1~q\ : std_logic;
-SIGNAL \registrador_2|ALT_INV_inst1~q\ : std_logic;
-SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w2_n0_mux_dataout~0_combout\ : std_logic;
-SIGNAL \registrador_1|ALT_INV_inst2~q\ : std_logic;
-SIGNAL \registrador_2|ALT_INV_inst2~q\ : std_logic;
-SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w3_n0_mux_dataout~0_combout\ : std_logic;
-SIGNAL \registrador_1|ALT_INV_inst3~q\ : std_logic;
-SIGNAL \registrador_2|ALT_INV_inst3~q\ : std_logic;
+SIGNAL \ALT_INV_MASTER_CLR~input_o\ : std_logic;
+SIGNAL \ALT_INV_CLK~input_o\ : std_logic;
+SIGNAL \ALT_INV_RST_DEB~input_o\ : std_logic;
+SIGNAL \inst82|ALT_INV_out_key~1_combout\ : std_logic;
+SIGNAL \inst5|ALT_INV_inst229~1_combout\ : std_logic;
+SIGNAL \inst5|ALT_INV_inst219~1_combout\ : std_logic;
+SIGNAL \inst5|ALT_INV_inst20~1_combout\ : std_logic;
+SIGNAL \inst5|ALT_INV_inst199~1_combout\ : std_logic;
+SIGNAL \inst5|ALT_INV_inst4~1_combout\ : std_logic;
 SIGNAL \inst5|ALT_INV_inst3~1_combout\ : std_logic;
 SIGNAL \inst5|ALT_INV_inst2~1_combout\ : std_logic;
 SIGNAL \inst5|ALT_INV_inst99~1_combout\ : std_logic;
@@ -538,15 +524,29 @@ SIGNAL \memdisp1|ALT_INV_inst50~0_combout\ : std_logic;
 SIGNAL \memdisp1|ALT_INV_inst60~0_combout\ : std_logic;
 SIGNAL \memdisp1|ALT_INV_inst78~0_combout\ : std_logic;
 SIGNAL \memdisp0|ALT_INV_inst9~0_combout\ : std_logic;
-SIGNAL \ALT_INV_MASTER_CLR~input_o\ : std_logic;
-SIGNAL \ALT_INV_CLK~input_o\ : std_logic;
-SIGNAL \ALT_INV_RST_DEB~input_o\ : std_logic;
-SIGNAL \inst82|ALT_INV_out_key~1_combout\ : std_logic;
-SIGNAL \inst5|ALT_INV_inst229~1_combout\ : std_logic;
-SIGNAL \inst5|ALT_INV_inst219~1_combout\ : std_logic;
-SIGNAL \inst5|ALT_INV_inst20~1_combout\ : std_logic;
-SIGNAL \inst5|ALT_INV_inst199~1_combout\ : std_logic;
-SIGNAL \inst5|ALT_INV_inst4~1_combout\ : std_logic;
+SIGNAL \memdisp0|ALT_INV_inst21~0_combout\ : std_logic;
+SIGNAL \memdisp0|ALT_INV_inst24~0_combout\ : std_logic;
+SIGNAL \memdisp0|ALT_INV_inst49~0_combout\ : std_logic;
+SIGNAL \memdisp0|ALT_INV_inst50~0_combout\ : std_logic;
+SIGNAL \memdisp0|ALT_INV_inst60~0_combout\ : std_logic;
+SIGNAL \memdisp0|ALT_INV_inst78~0_combout\ : std_logic;
+SIGNAL \ula|inst11|inst2|ALT_INV_inst5~0_combout\ : std_logic;
+SIGNAL \ula|inst13|inst3|ALT_INV_inst6~0_combout\ : std_logic;
+SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w0_n0_mux_dataout~0_combout\ : std_logic;
+SIGNAL \registrador_1|ALT_INV_inst~q\ : std_logic;
+SIGNAL \registrador_2|ALT_INV_inst~q\ : std_logic;
+SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w1_n0_mux_dataout~0_combout\ : std_logic;
+SIGNAL \registrador_1|ALT_INV_inst1~q\ : std_logic;
+SIGNAL \registrador_2|ALT_INV_inst1~q\ : std_logic;
+SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w2_n0_mux_dataout~0_combout\ : std_logic;
+SIGNAL \registrador_1|ALT_INV_inst2~q\ : std_logic;
+SIGNAL \registrador_2|ALT_INV_inst2~q\ : std_logic;
+SIGNAL \inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w3_n0_mux_dataout~0_combout\ : std_logic;
+SIGNAL \registrador_1|ALT_INV_inst3~q\ : std_logic;
+SIGNAL \registrador_2|ALT_INV_inst3~q\ : std_logic;
+SIGNAL \inst82|ALT_INV_counter\ : std_logic_vector(23 DOWNTO 0);
+SIGNAL \inst81|ALT_INV_counter\ : std_logic_vector(23 DOWNTO 0);
+SIGNAL \inst2|altsyncram_component|auto_generated|ALT_INV_q_a\ : std_logic_vector(15 DOWNTO 0);
 
 BEGIN
 
@@ -586,90 +586,15 @@ ww_devpor <= devpor;
 \inst2|altsyncram_component|auto_generated|q_a\(13) <= \inst2|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(13);
 \inst2|altsyncram_component|auto_generated|q_a\(14) <= \inst2|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(14);
 \inst2|altsyncram_component|auto_generated|q_a\(15) <= \inst2|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus\(15);
-\inst82|ALT_INV_counter\(17) <= NOT \inst82|counter\(17);
-\inst82|ALT_INV_counter\(18) <= NOT \inst82|counter\(18);
-\inst82|ALT_INV_counter\(15) <= NOT \inst82|counter\(15);
-\inst82|ALT_INV_counter\(20) <= NOT \inst82|counter\(20);
-\inst82|ALT_INV_counter\(21) <= NOT \inst82|counter\(21);
-\inst82|ALT_INV_counter\(22) <= NOT \inst82|counter\(22);
-\inst82|ALT_INV_counter\(23) <= NOT \inst82|counter\(23);
-\inst82|ALT_INV_counter\(0) <= NOT \inst82|counter\(0);
-\inst82|ALT_INV_counter\(16) <= NOT \inst82|counter\(16);
-\inst82|ALT_INV_counter\(7) <= NOT \inst82|counter\(7);
-\inst82|ALT_INV_counter\(8) <= NOT \inst82|counter\(8);
-\inst82|ALT_INV_counter\(9) <= NOT \inst82|counter\(9);
-\inst82|ALT_INV_counter\(10) <= NOT \inst82|counter\(10);
-\inst82|ALT_INV_counter\(11) <= NOT \inst82|counter\(11);
-\inst82|ALT_INV_counter\(19) <= NOT \inst82|counter\(19);
-\inst82|ALT_INV_counter\(1) <= NOT \inst82|counter\(1);
-\inst82|ALT_INV_counter\(2) <= NOT \inst82|counter\(2);
-\inst82|ALT_INV_counter\(3) <= NOT \inst82|counter\(3);
-\inst82|ALT_INV_counter\(4) <= NOT \inst82|counter\(4);
-\inst82|ALT_INV_counter\(5) <= NOT \inst82|counter\(5);
-\inst82|ALT_INV_counter\(6) <= NOT \inst82|counter\(6);
-\inst81|ALT_INV_counter\(2) <= NOT \inst81|counter\(2);
-\inst81|ALT_INV_counter\(3) <= NOT \inst81|counter\(3);
-\inst81|ALT_INV_counter\(4) <= NOT \inst81|counter\(4);
-\inst81|ALT_INV_counter\(5) <= NOT \inst81|counter\(5);
-\inst81|ALT_INV_counter\(6) <= NOT \inst81|counter\(6);
-\inst81|ALT_INV_counter\(7) <= NOT \inst81|counter\(7);
-\inst81|ALT_INV_counter\(20) <= NOT \inst81|counter\(20);
-\inst81|ALT_INV_counter\(21) <= NOT \inst81|counter\(21);
-\inst81|ALT_INV_counter\(22) <= NOT \inst81|counter\(22);
-\inst81|ALT_INV_counter\(1) <= NOT \inst81|counter\(1);
-\inst81|ALT_INV_counter\(0) <= NOT \inst81|counter\(0);
-\inst81|ALT_INV_counter\(23) <= NOT \inst81|counter\(23);
-\inst81|ALT_INV_counter\(14) <= NOT \inst81|counter\(14);
-\inst81|ALT_INV_counter\(15) <= NOT \inst81|counter\(15);
-\inst81|ALT_INV_counter\(16) <= NOT \inst81|counter\(16);
-\inst81|ALT_INV_counter\(17) <= NOT \inst81|counter\(17);
-\inst81|ALT_INV_counter\(18) <= NOT \inst81|counter\(18);
-\inst81|ALT_INV_counter\(19) <= NOT \inst81|counter\(19);
-\inst81|ALT_INV_counter\(8) <= NOT \inst81|counter\(8);
-\inst81|ALT_INV_counter\(9) <= NOT \inst81|counter\(9);
-\inst81|ALT_INV_counter\(10) <= NOT \inst81|counter\(10);
-\inst81|ALT_INV_counter\(11) <= NOT \inst81|counter\(11);
-\inst81|ALT_INV_counter\(12) <= NOT \inst81|counter\(12);
-\inst81|ALT_INV_counter\(13) <= NOT \inst81|counter\(13);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(1) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(1);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(2) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(2);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(3) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(3);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(4) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(4);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(5) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(5);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(6) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(6);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(7) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(7);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(8) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(8);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(9) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(9);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(10) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(10);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(11) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(11);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(12) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(12);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(13) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(13);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(14) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(14);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(15) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(15);
-\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(0) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(0);
-\memdisp0|ALT_INV_inst21~0_combout\ <= NOT \memdisp0|inst21~0_combout\;
-\memdisp0|ALT_INV_inst24~0_combout\ <= NOT \memdisp0|inst24~0_combout\;
-\memdisp0|ALT_INV_inst49~0_combout\ <= NOT \memdisp0|inst49~0_combout\;
-\memdisp0|ALT_INV_inst50~0_combout\ <= NOT \memdisp0|inst50~0_combout\;
-\memdisp0|ALT_INV_inst60~0_combout\ <= NOT \memdisp0|inst60~0_combout\;
-\memdisp0|ALT_INV_inst78~0_combout\ <= NOT \memdisp0|inst78~0_combout\;
-\ula|inst11|inst2|ALT_INV_inst5~0_combout\ <= NOT \ula|inst11|inst2|inst5~0_combout\;
-\ula|inst13|inst3|ALT_INV_inst6~0_combout\ <= NOT \ula|inst13|inst3|inst6~0_combout\;
-\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w0_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w0_n0_mux_dataout~0_combout\;
-\registrador_1|ALT_INV_inst~q\ <= NOT \registrador_1|inst~q\;
-\registrador_2|ALT_INV_inst~q\ <= NOT \registrador_2|inst~q\;
-\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w1_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w1_n0_mux_dataout~0_combout\;
-\registrador_1|ALT_INV_inst1~q\ <= NOT \registrador_1|inst1~q\;
-\registrador_2|ALT_INV_inst1~q\ <= NOT \registrador_2|inst1~q\;
-\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w2_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w2_n0_mux_dataout~0_combout\;
-\registrador_1|ALT_INV_inst2~q\ <= NOT \registrador_1|inst2~q\;
-\registrador_2|ALT_INV_inst2~q\ <= NOT \registrador_2|inst2~q\;
-\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w3_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w3_n0_mux_dataout~0_combout\;
-\registrador_1|ALT_INV_inst3~q\ <= NOT \registrador_1|inst3~q\;
-\registrador_2|ALT_INV_inst3~q\ <= NOT \registrador_2|inst3~q\;
-\inst82|ALT_INV_counter\(14) <= NOT \inst82|counter\(14);
-\inst82|ALT_INV_counter\(13) <= NOT \inst82|counter\(13);
-\inst82|ALT_INV_counter\(12) <= NOT \inst82|counter\(12);
+\ALT_INV_MASTER_CLR~input_o\ <= NOT \MASTER_CLR~input_o\;
+\ALT_INV_CLK~input_o\ <= NOT \CLK~input_o\;
+\ALT_INV_RST_DEB~input_o\ <= NOT \RST_DEB~input_o\;
+\inst82|ALT_INV_out_key~1_combout\ <= NOT \inst82|out_key~1_combout\;
+\inst5|ALT_INV_inst229~1_combout\ <= NOT \inst5|inst229~1_combout\;
+\inst5|ALT_INV_inst219~1_combout\ <= NOT \inst5|inst219~1_combout\;
+\inst5|ALT_INV_inst20~1_combout\ <= NOT \inst5|inst20~1_combout\;
+\inst5|ALT_INV_inst199~1_combout\ <= NOT \inst5|inst199~1_combout\;
+\inst5|ALT_INV_inst4~1_combout\ <= NOT \inst5|inst4~1_combout\;
 \inst5|ALT_INV_inst3~1_combout\ <= NOT \inst5|inst3~1_combout\;
 \inst5|ALT_INV_inst2~1_combout\ <= NOT \inst5|inst2~1_combout\;
 \inst5|ALT_INV_inst99~1_combout\ <= NOT \inst5|inst99~1_combout\;
@@ -778,15 +703,90 @@ ww_devpor <= devpor;
 \memdisp1|ALT_INV_inst60~0_combout\ <= NOT \memdisp1|inst60~0_combout\;
 \memdisp1|ALT_INV_inst78~0_combout\ <= NOT \memdisp1|inst78~0_combout\;
 \memdisp0|ALT_INV_inst9~0_combout\ <= NOT \memdisp0|inst9~0_combout\;
-\ALT_INV_MASTER_CLR~input_o\ <= NOT \MASTER_CLR~input_o\;
-\ALT_INV_CLK~input_o\ <= NOT \CLK~input_o\;
-\ALT_INV_RST_DEB~input_o\ <= NOT \RST_DEB~input_o\;
-\inst82|ALT_INV_out_key~1_combout\ <= NOT \inst82|out_key~1_combout\;
-\inst5|ALT_INV_inst229~1_combout\ <= NOT \inst5|inst229~1_combout\;
-\inst5|ALT_INV_inst219~1_combout\ <= NOT \inst5|inst219~1_combout\;
-\inst5|ALT_INV_inst20~1_combout\ <= NOT \inst5|inst20~1_combout\;
-\inst5|ALT_INV_inst199~1_combout\ <= NOT \inst5|inst199~1_combout\;
-\inst5|ALT_INV_inst4~1_combout\ <= NOT \inst5|inst4~1_combout\;
+\memdisp0|ALT_INV_inst21~0_combout\ <= NOT \memdisp0|inst21~0_combout\;
+\memdisp0|ALT_INV_inst24~0_combout\ <= NOT \memdisp0|inst24~0_combout\;
+\memdisp0|ALT_INV_inst49~0_combout\ <= NOT \memdisp0|inst49~0_combout\;
+\memdisp0|ALT_INV_inst50~0_combout\ <= NOT \memdisp0|inst50~0_combout\;
+\memdisp0|ALT_INV_inst60~0_combout\ <= NOT \memdisp0|inst60~0_combout\;
+\memdisp0|ALT_INV_inst78~0_combout\ <= NOT \memdisp0|inst78~0_combout\;
+\ula|inst11|inst2|ALT_INV_inst5~0_combout\ <= NOT \ula|inst11|inst2|inst5~0_combout\;
+\ula|inst13|inst3|ALT_INV_inst6~0_combout\ <= NOT \ula|inst13|inst3|inst6~0_combout\;
+\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w0_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w0_n0_mux_dataout~0_combout\;
+\registrador_1|ALT_INV_inst~q\ <= NOT \registrador_1|inst~q\;
+\registrador_2|ALT_INV_inst~q\ <= NOT \registrador_2|inst~q\;
+\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w1_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w1_n0_mux_dataout~0_combout\;
+\registrador_1|ALT_INV_inst1~q\ <= NOT \registrador_1|inst1~q\;
+\registrador_2|ALT_INV_inst1~q\ <= NOT \registrador_2|inst1~q\;
+\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w2_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w2_n0_mux_dataout~0_combout\;
+\registrador_1|ALT_INV_inst2~q\ <= NOT \registrador_1|inst2~q\;
+\registrador_2|ALT_INV_inst2~q\ <= NOT \registrador_2|inst2~q\;
+\inst11|LPM_MUX_component|auto_generated|ALT_INV_l1_w3_n0_mux_dataout~0_combout\ <= NOT \inst11|LPM_MUX_component|auto_generated|l1_w3_n0_mux_dataout~0_combout\;
+\registrador_1|ALT_INV_inst3~q\ <= NOT \registrador_1|inst3~q\;
+\registrador_2|ALT_INV_inst3~q\ <= NOT \registrador_2|inst3~q\;
+\inst82|ALT_INV_counter\(14) <= NOT \inst82|counter\(14);
+\inst82|ALT_INV_counter\(13) <= NOT \inst82|counter\(13);
+\inst82|ALT_INV_counter\(12) <= NOT \inst82|counter\(12);
+\inst82|ALT_INV_counter\(17) <= NOT \inst82|counter\(17);
+\inst82|ALT_INV_counter\(18) <= NOT \inst82|counter\(18);
+\inst82|ALT_INV_counter\(15) <= NOT \inst82|counter\(15);
+\inst82|ALT_INV_counter\(20) <= NOT \inst82|counter\(20);
+\inst82|ALT_INV_counter\(21) <= NOT \inst82|counter\(21);
+\inst82|ALT_INV_counter\(22) <= NOT \inst82|counter\(22);
+\inst82|ALT_INV_counter\(23) <= NOT \inst82|counter\(23);
+\inst82|ALT_INV_counter\(0) <= NOT \inst82|counter\(0);
+\inst82|ALT_INV_counter\(16) <= NOT \inst82|counter\(16);
+\inst82|ALT_INV_counter\(7) <= NOT \inst82|counter\(7);
+\inst82|ALT_INV_counter\(8) <= NOT \inst82|counter\(8);
+\inst82|ALT_INV_counter\(9) <= NOT \inst82|counter\(9);
+\inst82|ALT_INV_counter\(10) <= NOT \inst82|counter\(10);
+\inst82|ALT_INV_counter\(11) <= NOT \inst82|counter\(11);
+\inst82|ALT_INV_counter\(19) <= NOT \inst82|counter\(19);
+\inst82|ALT_INV_counter\(1) <= NOT \inst82|counter\(1);
+\inst82|ALT_INV_counter\(2) <= NOT \inst82|counter\(2);
+\inst82|ALT_INV_counter\(3) <= NOT \inst82|counter\(3);
+\inst82|ALT_INV_counter\(4) <= NOT \inst82|counter\(4);
+\inst82|ALT_INV_counter\(5) <= NOT \inst82|counter\(5);
+\inst82|ALT_INV_counter\(6) <= NOT \inst82|counter\(6);
+\inst81|ALT_INV_counter\(2) <= NOT \inst81|counter\(2);
+\inst81|ALT_INV_counter\(3) <= NOT \inst81|counter\(3);
+\inst81|ALT_INV_counter\(4) <= NOT \inst81|counter\(4);
+\inst81|ALT_INV_counter\(5) <= NOT \inst81|counter\(5);
+\inst81|ALT_INV_counter\(6) <= NOT \inst81|counter\(6);
+\inst81|ALT_INV_counter\(7) <= NOT \inst81|counter\(7);
+\inst81|ALT_INV_counter\(20) <= NOT \inst81|counter\(20);
+\inst81|ALT_INV_counter\(21) <= NOT \inst81|counter\(21);
+\inst81|ALT_INV_counter\(22) <= NOT \inst81|counter\(22);
+\inst81|ALT_INV_counter\(1) <= NOT \inst81|counter\(1);
+\inst81|ALT_INV_counter\(0) <= NOT \inst81|counter\(0);
+\inst81|ALT_INV_counter\(23) <= NOT \inst81|counter\(23);
+\inst81|ALT_INV_counter\(14) <= NOT \inst81|counter\(14);
+\inst81|ALT_INV_counter\(15) <= NOT \inst81|counter\(15);
+\inst81|ALT_INV_counter\(16) <= NOT \inst81|counter\(16);
+\inst81|ALT_INV_counter\(17) <= NOT \inst81|counter\(17);
+\inst81|ALT_INV_counter\(18) <= NOT \inst81|counter\(18);
+\inst81|ALT_INV_counter\(19) <= NOT \inst81|counter\(19);
+\inst81|ALT_INV_counter\(8) <= NOT \inst81|counter\(8);
+\inst81|ALT_INV_counter\(9) <= NOT \inst81|counter\(9);
+\inst81|ALT_INV_counter\(10) <= NOT \inst81|counter\(10);
+\inst81|ALT_INV_counter\(11) <= NOT \inst81|counter\(11);
+\inst81|ALT_INV_counter\(12) <= NOT \inst81|counter\(12);
+\inst81|ALT_INV_counter\(13) <= NOT \inst81|counter\(13);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(1) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(1);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(2) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(2);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(3) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(3);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(4) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(4);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(5) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(5);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(6) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(6);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(7) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(7);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(8) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(8);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(9) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(9);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(10) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(10);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(11) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(11);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(12) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(12);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(13) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(13);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(14) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(14);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(15) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(15);
+\inst2|altsyncram_component|auto_generated|ALT_INV_q_a\(0) <= NOT \inst2|altsyncram_component|auto_generated|q_a\(0);
 
 -- Location: IOOBUF_X0_Y20_N56
 \ULA_WARN~output\ : cyclonev_io_obuf
@@ -3718,12 +3718,12 @@ PORT MAP (
 GENERIC MAP (
 	mem_init2 => "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
 	mem_init1 => "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-	mem_init0 => "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000600306200093020610106302090020000000000000000000000C0D0040009003060020900206305062010910206004",
+	mem_init0 => "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080006001062000930206102063020900209001060010040000000000000000000C0806304062020910106005",
 	data_interleave_offset_in_bits => 1,
 	data_interleave_width_in_bits => 1,
-	init_file => "Mem02.mif",
+	init_file => "../Mem01.mif",
 	init_file_layout => "port_a",
-	logical_ram_name => "ROM2:inst2|altsyncram:altsyncram_component|altsyncram_8u14:auto_generated|ALTSYNCRAM",
+	logical_ram_name => "ROM1:inst2|altsyncram:altsyncram_component|altsyncram_i224:auto_generated|ALTSYNCRAM",
 	operation_mode => "rom",
 	port_a_address_clear => "none",
 	port_a_address_width => 8,

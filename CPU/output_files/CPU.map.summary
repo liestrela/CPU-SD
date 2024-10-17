@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Sun Oct 13 23:24:32 2024
+Analysis & Synthesis Status : Successful - Wed Oct 16 23:26:12 2024
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : CPU
-Top-level Entity Name : PRINCIPAL2
+Top-level Entity Name : PRINCIPAL
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 76
