@@ -1,4 +1,5 @@
+- */CPU* : CPU com contador na borda de descida e registrador auxiliar;
+- */CPU2* : CPU com contador da borda de subida e clock "em falso" necessário;
+
 TODO:
-- limpar o display do contador no master reset;
-- testar cada componente no modelsim e exportar as saídas para mostrar pro prof.;
 - apresentar o projeto;

@@ -110,8 +110,8 @@ mem_d3[2]                    : AA10      : output : 2.5 V             :         
 GND                          : AA11      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 4A        :                
-ULA_OUT[3]                   : AA14      : output : 2.5 V             :         : 4A        : N              
-ULA_OUT[1]                   : AA15      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 4A        :                
+ULA_OUT[3]                   : AA15      : output : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : AA16      : power  :                   : 2.5V    : 4A        :                
 r1_d[5]                      : AA17      : output : 2.5 V             :         : 4A        : Y              
 r1_d[3]                      : AA18      : output : 2.5 V             :         : 4A        : Y              
@@ -130,10 +130,10 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB8       :        :                   :      
 GND                          : AB9       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 3B        :                
-MASTER_CLR                   : AB12      : input  : 2.5 V             :         : 4A        : Y              
-RST_DEB                      : AB13      : input  : 2.5 V             :         : 4A        : Y              
+CLK                          : AB12      : input  : 2.5 V             :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 4A        :                
 GND                          : AB14      : gnd    :                   :         :           :                
-ULA_OUT[0]                   : AB15      : output : 2.5 V             :         : 4A        : N              
+ULA_OUT[2]                   : AB15      : output : 2.5 V             :         : 4A        : N              
 VREFB4AN0                    : AB16      : power  :                   :         : 4A        :                
 mem_d3[1]                    : AB17      : output : 2.5 V             :         : 4A        : Y              
 r1_d[4]                      : AB18      : output : 2.5 V             :         : 4A        : Y              
@@ -366,7 +366,7 @@ GND                          : M2        : gnd    :                   :         
 VCCA_FPLL                    : M3        : power  :                   : 2.5V    :           :                
 GND                          : M4        : gnd    :                   :         :           :                
 TDO                          : M5        : output :                   :         : 3A        :                
-CLK                          : M6        : input  : 2.5 V             :         : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M6        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 3A        :                
 mem_d0[1]                    : M8        : output : 2.5 V             :         : 3B        : Y              
 CLK_FPGA                     : M9        : input  : 2.5 V             :         : 3B        : Y              
@@ -461,7 +461,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3B        :                
 VCCIO3B                      : T11       : power  :                   : 2.5V    : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T13       :        :                   :         : 4A        :                
+ULA_OUT[0]                   : T13       : output : 2.5 V             :         : 4A        : N              
 mem_d0[2]                    : T14       : output : 2.5 V             :         : 4A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 5A        :                
 GND                          : T16       : gnd    :                   :         :           :                
@@ -483,7 +483,7 @@ GND                          : U9        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U12       :        :                   :         : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U13       :        :                   :         : 4A        :                
+MASTER_CLR                   : U13       : input  : 2.5 V             :         : 4A        : Y              
 VCCIO4A                      : U14       : power  :                   : 2.5V    : 4A        :                
 mem_d1[4]                    : U15       : output : 2.5 V             :         : 4A        : Y              
 mem_d1[3]                    : U16       : output : 2.5 V             :         : 4A        : Y              
@@ -505,9 +505,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :         : 3B        :                
 NC                           : V11       :        :                   :         :           :                
 GND                          : V12       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4A        :                
+RST_DEB                      : V13       : input  : 2.5 V             :         : 4A        : Y              
 mem_d3[4]                    : V14       : output : 2.5 V             :         : 4A        : Y              
-ULA_OUT[2]                   : V15       : output : 2.5 V             :         : 4A        : N              
+ULA_OUT[1]                   : V15       : output : 2.5 V             :         : 4A        : N              
 mem_d2[3]                    : V16       : output : 2.5 V             :         : 4A        : Y              
 GND                          : V17       : gnd    :                   :         :           :                
 mem_d2[5]                    : V18       : output : 2.5 V             :         : 4A        : Y              
