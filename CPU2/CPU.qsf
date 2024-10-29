@@ -103,14 +103,16 @@ set_location_assignment PIN_Y21 -to r2_d[5]
 set_location_assignment PIN_AA22 -to r2_d[6]
 set_location_assignment PIN_AB12 -to CLK
 set_location_assignment PIN_V13 -to RST_DEB
-set_location_assignment PIN_AA2 -to CNT_D[0]
-set_location_assignment PIN_AA1 -to CNT_D[1]
-set_location_assignment PIN_W2 -to CNT_D[2]
-set_location_assignment PIN_Y3 -to CNT_D[3]
-set_location_assignment PIN_N2 -to CNT_D[4]
-set_location_assignment PIN_N1 -to CNT_D[5]
-set_location_assignment PIN_U2 -to CNT_D[6]
-set_location_assignment PIN_U1 -to CNT_D[7]
+set_location_assignment PIN_AA1 -to CNTDISP[1]
+set_location_assignment PIN_W2 -to CNTDISP[2]
+set_location_assignment PIN_Y3 -to CNTDISP[3]
+set_location_assignment PIN_N2 -to CNTDISP[4]
+set_location_assignment PIN_N1 -to CNTDISP[5]
+set_location_assignment PIN_U2 -to CNTDISP[6]
+set_location_assignment PIN_U1 -to CNTDISP[7]
+set_location_assignment PIN_AA2 -to CNTDISP[0]
+set_global_assignment -name BDF_FILE PRINCIPAL_TESTE.bdf
+set_global_assignment -name BDF_FILE PRINCIPAL2_TESTE.bdf
 set_global_assignment -name BDF_FILE TESTE_PRINCIPAL2.bdf
 set_global_assignment -name BDF_FILE TESTE_PRINCIPAL.bdf
 set_global_assignment -name BDF_FILE PRINCIPAL2.bdf
@@ -149,6 +151,8 @@ set_global_assignment -name BDF_FILE TESTE_REGISTRADOR.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
 set_global_assignment -name BDF_FILE TESTE_UC.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

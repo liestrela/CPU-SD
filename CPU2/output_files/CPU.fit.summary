@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Oct 27 20:43:54 2024
+Fitter Status : Successful - Tue Oct 29 14:17:26 2024
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : CPU
-Top-level Entity Name : PRINCIPAL
+Top-level Entity Name : PRINCIPAL2
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 91 / 18,480 ( < 1 % )
+Logic utilization (in ALMs) : 90 / 18,480 ( < 1 % )
 Total registers : 60
 Total pins : 59 / 224 ( 26 % )
 Total virtual pins : 0

@@ -97,8 +97,8 @@ NC                           : A19       :        :                   :         
 NC                           : A20       :        :                   :         :           :                
 GND                          : A21       : gnd    :                   :         :           :                
 NC                           : A22       :        :                   :         :           :                
-CNT_D[1]                     : AA1       : output : 2.5 V             :         : 2A        : Y              
-CNT_D[0]                     : AA2       : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[1]                   : AA1       : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[0]                   : AA2       : output : 2.5 V             :         : 2A        : Y              
 GND                          : AA3       : gnd    :                   :         :           :                
 GND                          : AA4       : gnd    :                   :         :           :                
 AS_DATA2, DATA2              : AA5       :        :                   :         : 3A        :                
@@ -110,8 +110,8 @@ mem_d3[2]                    : AA10      : output : 2.5 V             :         
 GND                          : AA11      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 4A        :                
-ULA_OUT[1]                   : AA14      : output : 2.5 V             :         : 4A        : N              
-ULA_OUT[2]                   : AA15      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 4A        :                
+ULA_OUT[0]                   : AA15      : output : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : AA16      : power  :                   : 2.5V    : 4A        :                
 r1_d[5]                      : AA17      : output : 2.5 V             :         : 4A        : Y              
 r1_d[3]                      : AA18      : output : 2.5 V             :         : 4A        : Y              
@@ -133,7 +133,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :      
 CLK                          : AB12      : input  : 2.5 V             :         : 4A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 4A        :                
 GND                          : AB14      : gnd    :                   :         :           :                
-ULA_OUT[3]                   : AB15      : output : 2.5 V             :         : 4A        : N              
+ULA_OUT[1]                   : AB15      : output : 2.5 V             :         : 4A        : N              
 VREFB4AN0                    : AB16      : power  :                   :         : 4A        :                
 mem_d3[1]                    : AB17      : output : 2.5 V             :         : 4A        : Y              
 r1_d[4]                      : AB18      : output : 2.5 V             :         : 4A        : Y              
@@ -383,8 +383,8 @@ VCCIO5B                      : M19       : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : M20       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M22       :        :                   :         : 5B        :                
-CNT_D[5]                     : N1        : output : 2.5 V             :         : 2A        : Y              
-CNT_D[4]                     : N2        : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[5]                   : N1        : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[4]                   : N2        : output : 2.5 V             :         : 2A        : Y              
 GND                          : N3        : gnd    :                   :         :           :                
 VCC                          : N4        : power  :                   : 1.1V    :           :                
 GND                          : N5        : gnd    :                   :         :           :                
@@ -466,13 +466,13 @@ mem_d0[2]                    : T14       : output : 2.5 V             :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 5A        :                
 GND                          : T16       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 5A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5A        :                
+ULA_OUT[3]                   : T18       : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T19       :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T20       :        :                   :         : 5A        :                
 GND                          : T21       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 5A        :                
-CNT_D[7]                     : U1        : output : 2.5 V             :         : 2A        : Y              
-CNT_D[6]                     : U2        : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[7]                   : U1        : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[6]                   : U2        : output : 2.5 V             :         : 2A        : Y              
 GND                          : U3        : gnd    :                   :         :           :                
 GND                          : U4        : gnd    :                   :         :           :                
 GND                          : U5        : gnd    :                   :         :           :                
@@ -507,7 +507,7 @@ NC                           : V11       :        :                   :         
 GND                          : V12       : gnd    :                   :         :           :                
 RST_DEB                      : V13       : input  : 2.5 V             :         : 4A        : Y              
 mem_d3[4]                    : V14       : output : 2.5 V             :         : 4A        : Y              
-ULA_OUT[0]                   : V15       : output : 2.5 V             :         : 4A        : N              
+ULA_OUT[2]                   : V15       : output : 2.5 V             :         : 4A        : N              
 mem_d2[3]                    : V16       : output : 2.5 V             :         : 4A        : Y              
 GND                          : V17       : gnd    :                   :         :           :                
 mem_d2[5]                    : V18       : output : 2.5 V             :         : 4A        : Y              
@@ -516,7 +516,7 @@ mem_d1[2]                    : V20       : output : 2.5 V             :         
 r2_d[1]                      : V21       : output : 2.5 V             :         : 4A        : Y              
 GND                          : V22       : gnd    :                   :         :           :                
 VREFB2AN0                    : W1        : power  :                   :         : 2A        :                
-CNT_D[2]                     : W2        : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[2]                   : W2        : output : 2.5 V             :         : 2A        : Y              
 GND                          : W3        : gnd    :                   :         :           :                
 GND                          : W4        : gnd    :                   :         :           :                
 TDI                          : W5        : input  :                   :         : 3A        :                
@@ -539,7 +539,7 @@ r2_d[3]                      : W21       : output : 2.5 V             :         
 r2_d[2]                      : W22       : output : 2.5 V             :         : 4A        : Y              
 GND                          : Y1        : gnd    :                   :         :           :                
 GND                          : Y2        : gnd    :                   :         :           :                
-CNT_D[3]                     : Y3        : output : 2.5 V             :         : 2A        : Y              
+CNTDISP[3]                   : Y3        : output : 2.5 V             :         : 2A        : Y              
 VCCIO2A                      : Y4        : power  :                   : 2.5V    : 2A        :                
 GND                          : Y5        : gnd    :                   :         :           :                
 NC                           : Y6        :        :                   :         :           :                

@@ -8,35 +8,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[7]",
+					"name" : "CNTDISP[7]",
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[6]",
+					"name" : "CNTDISP[6]",
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[5]",
+					"name" : "CNTDISP[5]",
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[4]",
+					"name" : "CNTDISP[4]",
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[3]",
+					"name" : "CNTDISP[3]",
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[2]",
+					"name" : "CNTDISP[2]",
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[1]",
+					"name" : "CNTDISP[1]",
 					"strict" : false
 				},
 				{
-					"name" : "CNT_D[0]",
+					"name" : "CNTDISP[0]",
 					"strict" : false
 				},
 				{
